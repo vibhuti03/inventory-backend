@@ -1,0 +1,29 @@
+databaseChangeLog:
+- changeSet:
+    id: 1653401672750-1
+    author: Vibhuti (generated)
+    changes:
+    - createTable:
+        columns:
+        - column:
+            autoIncrement: true
+            constraints:
+              nullable: false
+              primaryKey: true
+              primaryKeyName: inventory_itemsPK
+            name: id
+            type: bigint
+        - column:
+            name: cost_price
+            type: int
+        - column:
+            name: product_name
+            type: varchar(255)
+        - column:
+            name: product_quantity
+            type: int
+        - column:
+            name: sell_price
+            type: int
+        tableName: inventory_items
+

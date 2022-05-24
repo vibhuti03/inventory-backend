@@ -1,0 +1,4 @@
+databaseChangeLog:
+  - include:
+      file: migrations/24052022_inventory_items.yaml
+      relativeToChangelogFile: true
