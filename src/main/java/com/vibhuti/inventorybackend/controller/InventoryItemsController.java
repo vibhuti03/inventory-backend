@@ -7,7 +7,9 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@CrossOrigin(origins = "http://localhost:3000/")
+import static org.springframework.web.bind.annotation.RequestMethod.*;
+
+//@CrossOrigin(origins = "*", allowedHeaders = "*", methods = {GET,PUT, POST, DELETE})
 @RestController
 @RequestMapping("api/v1")
 public class InventoryItemsController {
